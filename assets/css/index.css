@@ -110,7 +110,7 @@ input[type=submit]{
     width: 400px;
     margin-bottom: 30px;
     padding: 5px 10px;
-    background-color: #ffffff00;
+    background-color: #ffffff;
     border-color: white;
 }
 ::placeholder{

@@ -11,7 +11,7 @@
     height: 870px;
     background-repeat: no-repeat;
     background-position: center right;
-    background-size:auto;
+    background-size:cover;
 }
 .titre{
     margin-bottom: 50px;
@@ -120,4 +120,8 @@ input[type=submit]{
 .newsletter-formulaire input[type=submit]{
     background-color: white;
     color: #000000;
+}
+.boxh{
+    position: relative;
+    left: -1500px;
 }

@@ -1,3 +1,10 @@
+function headerlinethrough(obj){
+    obj.style.textDecoration = 'line-through';
+}
+function headernormal(obj){
+    obj.style.textDecoration = 'none';
+
+}
 function changebtn1(obj){
     obj.style.color = "var(--white-ad-color) ";
     obj.style.fontWeight = "bold";
@@ -24,11 +31,16 @@ function returnbtn2(obj){
     obj.style.backgroundColor = "transparent";
     obj.style.boxShadow = "none"
 }
-function logohover(obj){
-    object.style.filter= "invert(1)"
-    // obj.style.color = "var(--white-ad-color)";
+function footerover(obj){
+    obj.style.color = "var(--white-ad-color)";
 }
-
-function logooff(obj){
-    obj.style.backgroundColor = "black";
+function footerretourn(obj){
+    obj.style.color = "black";
 }
+$(".boxh").ready(function(){
+    $(".boxh").ready(function(){
+        $(".boxh").animate({left:'3'},{duration:3000});
+        $(".description").fadeOut(10, "swing");
+        $(".description").fadeIn(7000, "linear");
+    })
+})

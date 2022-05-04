@@ -225,9 +225,12 @@ footer .media{
     padding: 15px;
     margin-bottom: 10px;
 }
-footer .media img{
+footer .media i{
     background-color: var(--primary-ad-color);
-    color: var(--white-ad-color);
+    color:black;
+     /* var(--white-ad-color); */
+    height: 45px;
+    width:45px;
     padding: 5px;
     border-radius: 50%;
 }

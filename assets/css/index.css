@@ -4,11 +4,21 @@
     --white-ad-color: #ffffff;
     --blue-color:#114c92;
 }
-
+.spiderimage{
+    position:absolute;
+    right: -10%
+}
+.scroller{
+    position: absolute;
+    top:-50px;
+    right: -20px;
+}
 #hero{
-    background-image: url("../img/img1.png");
+    background-image: linear-gradient(rgb(39, 2, 2),var(--primary-ad-color)) ;
+    /* background-image: url("../img/img1.png"); */
     background-color: var(--primary-ad-color);
     height: 870px;
+    position: relative;
     background-repeat: no-repeat;
     background-position: center right;
     background-size:cover;
@@ -57,14 +67,24 @@
 #spiderman{
     color: var(--white-ad-color);
     background-color: var(--blue-color);
-    height: 550px;
-    background-image: url("../img/img5.png");
+    opacity: 0.9;
+    height: 570px;
+    /* background-image: url("../img/img5.png"); */
     background-position: center left;
     background-size: auto;
     background-repeat: no-repeat;
     padding: 20px 0;
 }
-
+.blackbox{
+    position: absolute;
+    display: flex;
+    height: 470px;
+}
+.blackbox img{
+    position: absolute;
+    top: -5px;
+    z-index: -1;
+}
 h1{
     font-family: 'far_from_homecomingregular';
     font-size: 35px;
@@ -93,6 +113,7 @@ input[type=submit]{
 
 #newsletter{
     background-color: var(--primary-ad-color);
+    opacity: 0.9;
     height: 550px;
     background-image: url("../img/img6.png");
     background-position: center right;

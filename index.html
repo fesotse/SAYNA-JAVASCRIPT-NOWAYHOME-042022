@@ -46,20 +46,27 @@
                     </div>
                 </nav>
             </div>
-            <div class="conteneur box boxh">
-                <h1 class="titre">SPIDERMAN</h1>
-                <div class="cta mt-5">
-                    <button onmouseover="changebtn1(this)" onmouseout="returnbtn1(this)" type="button" class="btn button1 me-5 ">Voir les héros</button>
-                    <button onmouseover="changebtn2(this)" onmouseout="returnbtn2(this)" type="button" class="btn button2">Voir les adversaires</button>
+            <div class="conteneur box d-flex">
+                <div class="boxh">
+                    <h1 class="titre">SPIDERMAN</h1>
+                    <div class="cta mt-5">
+                        <button onmouseover="changebtn1(this)" onmouseout="returnbtn1(this)" type="button" class="btn button1 me-5 ">Voir les héros</button>
+                        <button onmouseover="changebtn2(this)" onmouseout="returnbtn2(this)" type="button" class="btn button2">Voir les adversaires</button>
+                    </div>
+                    <p class="description">L’araignée sympa du quartier!</p>
+                    <audio class="mt-4" src="./assets/audio/audio1.mp3" controls></audio>
                 </div>
-                <p class="description">L’araignée sympa du quartier!</p>
-                <audio class="mt-4" src="./assets/audio/audio1.mp3" controls></audio>
+                <div class="spiderimage">
+                    <img class="marvel" src="/assets/home1.png" alt="">
+                    <img class="scroller" src="/assets/home2.png" alt="">
+                </div>
+                
             </div>
         </section>
         <section id="lesspiderman" class="pb-5">
             <div class="container text-white">
                 <div class="row">
-                    <div class="col-md-6 boxh ">
+                    <div class="col-md-6 box boxh ">
                         <h1 class="text-uppercase">Les Spidermans au cinéma</h1>
                         <p class="description">Spiderman a pu bénéficier de reboot qui ont permis d’adapter ses histoires
                         pour chaque génération !
@@ -103,9 +110,31 @@
         </section>
     </main>
     <section id="spiderman">
+        <div class="modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Modal title</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="blackbox">
+            <img class="blackspiderman" src="/assets/img/img5.png" alt="">
+        </div>
         <div class="container text-center">
             <div class="spider-content float-end">
-                <div class="spiderman-head boxh">
+                <div class="spiderman-head box boxh">
                     <h1 class="text-uppercase" >Deviens Spiderman</h1>
                     <p class="description">Rempli le formulaire ci dessous afin de recevoir ton propre costume.</p>
                 </div>
@@ -126,7 +155,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-white">
-                    <div class="newsletter-head boxh">
+                    <div class="newsletter-head box boxh">
                         <h1 class="text-uppercase"> Inscrit  toi a la newsletter</h1>
                         <p class="description">L’univers de l’araignée justicière te passionne ? Reste au courant des dernières
                             actualités grâce à notre newsletter! 
